@@ -6,7 +6,7 @@ Resources:
       SecurityGroups:
         - !Ref InstanceSecurityGroup
       # Change this, as applicable to you      
-      KeyName: khiemnv6-udacity
+      KeyName: khiemv6-udacity
       ImageId: 'ami-09d56f8956ab235b3' 
       InstanceType: t2.micro
   InstanceSecurityGroup:
