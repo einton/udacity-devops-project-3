@@ -32,6 +32,10 @@ jobs:
       - add_ssh_keys:
           fingerprints: ["0c:5c:dc:a1:28:f1:f4:bd:c6:e4:c3:c9:45:ba:ef:44"] 
       - run:
+          name: Install ssh and git
+          command: |
+            apk add --update openssh-client git
+      - run:
           name: Install Ansible
           command: |
             apk add --update ansible
